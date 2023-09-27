@@ -213,21 +213,51 @@
 // console.log(result);
 
 
-const numbers = [10,202,25222222,22,22,8,66,0,0.5]
-const result = smallnumber(numbers)
+// const numbers = [10,202,25222222,22,22,8,66,0,0.5]
+// const result = smallnumber(numbers)
 
 
-function smallnumber(arr) {
+// function smallnumber(arr) {
+//     let small = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] < small) {
+//             small =+ arr[i]
+//         }
+        
+//     }
+// return small    
+// }
+// console.log(result);
+
+const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+const result = findnumbers(numbers);
+
+
+
+function findnumbers(arr) {
     let small = arr[0];
     for (let i = 0; i < arr.length; i++) {
-        if (arr[i] < small) {
-            small =+ arr[i]
-        }
-        
+if (arr[i] < small) {
+    small = arr[i]
+}        
     }
-return small    
+    return small
 }
+
+
+
+
+
 console.log(result);
+
+
+
+
+
+
+
+
+
 
 
 
