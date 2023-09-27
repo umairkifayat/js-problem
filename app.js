@@ -35,7 +35,7 @@
 
 // function log(params) {
 //   return array.split().reverse().join()
-    
+
 // }
 
 // console.log(array);
@@ -45,12 +45,12 @@
 //     // Split the string into an array of characters, reverse it, and then join it back into a string.
 //     return inputString.split('').reverse().join('');
 //   }
-  
+
 //   const originalString = "Hello, World!";
 //   const reversedString = reverseString(originalString);
 //   console.log(`Original String: ${originalString}`);
 //   console.log(`Reversed String: ${reversedString}`);
-  
+
 
 
 // function reversedString(inputString) {
@@ -79,7 +79,7 @@
 //     let result = 1;
 //     for (let i = 2; i <= n; i++) {
 //         result  *= i
-        
+
 //     }
 //     return result
 // }
@@ -156,7 +156,7 @@
 //     let sum = 0;
 //     for (let i = 0; i < array.length; i++) {
 //         sum += array[i]
-        
+
 //     }
 //     return sum
 // }
@@ -171,7 +171,7 @@
 //     let sum = 0;
 //     for (let i = 0; i < array.length; i++) {
 //         sum += array[i]
-        
+
 //     }
 //     return sum
 // }
@@ -187,9 +187,9 @@
 //     for (let i = 1; i < arr.length; i++) {
 //         if (arr[i] > largest) {
 //             largest = arr[i]
-        // }
-       
-        
+// }
+
+
 //     }
 //     return largest
 // }
@@ -205,7 +205,7 @@
 //         if (arr[i] > largest) {
 //             largest += arr[i]
 //         }
-        
+
 //     }
 //     return largest
 // }
@@ -223,47 +223,105 @@
 //         if (arr[i] < small) {
 //             small =+ arr[i]
 //         }
-        
+
 //     }
 // return small    
 // }
 // console.log(result);
 
-const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
-const result = findnumbers(numbers);
+// const numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+// const result = findnumbers(numbers);
 
 
 
-function findnumbers(arr) {
-    let small = arr[0];
-    for (let i = 0; i < arr.length; i++) {
-if (arr[i] < small) {
-    small = arr[i]
-}        
-    }
-    return small
+// function findnumbers(arr) {
+//     let small = arr[0];
+//     for (let i = 0; i < arr.length; i++) {
+// if (arr[i] < small) {
+//     small = arr[i]
+// }        
+//     }
+//     return small
+// }
+
+
+
+
+
+// console.log(result);
+
+
+
+
+// const original = 'hello world'
+// const result = reversevalue(original)
+
+
+// function reversevalue(input) {
+//      return   input.split('').reverse().join();
+// }
+
+// console.log(result);
+
+
+// function reversedString(inputString) {
+//     return inputString.split("").reverse("").join("")
+// }
+// const original = "Umair kifayat";
+// const revers = reversedString(original);
+// console.log(revers);
+
+
+
+// const user = prompt("Enter your city names")
+// const city = ["karachi,oamn ,saudia,dubai"]
+
+
+// function names() {
+
+//         for (let i = 0; i < city.length; i++) {
+//                 if (user.toLowerCase() === city[i]) {
+//                         console.log("city is  found");
+
+//                         return;
+
+//                 }
+//         }
+//         console.log("city is not found");
+
+// }
+// names()
+
+
+// const user = prompt("Enter your city name");
+// const cities = ["karachi", "oman", "saudia", "dubai"];
+
+// function checkCity() {
+//     for (let i = 0; i < cities.length; i++) {
+//         if (user.toLowerCase() === cities[i]) {
+//             console.log("City found in the array.");
+//             return; // Exit the function when a match is found.
+//         }
+//     }
+//     console.log("City not found in the array.");
+// }
+
+
+
+const user = prompt("enter your city name");
+const cities = ["Islamabad","umair","uzair"]
+
+function checkCity() {
+        for (let i = 0; i < cities.length; i++) {
+                if (user === cities[i]) {
+                        console.log("city found in the array");
+       return;
+                }
+        }
+       console.log("not found");
 }
 
-
-
-
-
-console.log(result);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+checkCity();
 
 
 
