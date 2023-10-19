@@ -1,0 +1,28 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #00ffff;
+}
+.container{
+    position: absolute;
+}
+.clock{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: red;
+}
+.clock span{
+    position: absolute;
+    transform: rotate(cal(30deg * var(--i)));
+    inset: 12px;
+    /* text-align: center; */
+}
