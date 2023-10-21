@@ -4,14 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Practice</title>
+  <style>
+    .container{
+      background-color: aqua;
+    }
+    .box{
+      background-color: brown;
+      width: 250px;
+      height: 250px;
+      position: relative;
+      /* transition-property: width,height;
+    transition-timing-function: ease-in-out;
+      transition-duration: 2s; */
+      /* animation-name: box;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: 200px; */
+    }
+    .box:hover{
+      /* transform: rotate(30deg); */
+      /* transform: skew(123deg); */
+      transform:relative(123deg);
+
+    }
+    /* .box:hover{
+     width: 200px;
+     height: 200px;
+    } */
+    /* @keyframes box {
+      form{
+        width: 5px;
+
+      }
+      to{
+        width: 100px;
+      }
+    } */
+  </style>
 </head>
 <body>
-  <h1>Hello Dom</h1>
-<div class="div">
-
-</div>
-<button class="btn">clickme</button>
-<button onclick="gocart() "  id="btn">clickme</button>
+ <h1>hello animations</h1>
+ <div class="container">
+  <div class="box">
+this is a box
+  </div>
+ </div>
 
   <script src="app.js"></script>
 </body>
