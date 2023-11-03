@@ -177,27 +177,101 @@
 
 
 
-const div = document.querySelector('.div');
-const email = document.querySelector('#email');
-const password = document.querySelector('#password');
-const form = document.querySelector('#form');
-const form1 = document.querySelector('#form1');
+// const div = document.querySelector('.div');
+// const email = document.querySelector('#email');
+// const password = document.querySelector('#password');
+// const form = document.querySelector('#form');
+// const form1 = document.querySelector('#form1');
 
-let arr = []
+// let arr = []
 
-// form1.addEventListener('click',()=>{
-    form.addEventListener('click', (event) => {
-    setTimeinterval(()=>{
-    event.preventDefault();
-    arr.push({
-        email: email.value,
-        password: password.value,
-    })
+// // form1.addEventListener('click',()=>{
+//     form.addEventListener('click', (event) => {
+//     setTimeinterval (()=>{
+//     event.preventDef ault();
+//     arr.push({
+//         email: email.value,
+//         password: password.value,
+//     })
 
-        div.innerHTML = `${email.value}, ${password.value}`
-    },1000)
-    // console.log(arr);
-
-})
+//         div.innerHTML = `${email.value}, ${password.value}`
+//     },1000)
+//     // console.log(arr);
 
 // })
+
+// // })
+
+
+
+
+
+// const array =['bat','ball','wicket','helment','shirt','shoes']
+// const arr =['batwertyuioplkjhgf']
+
+// array.push('shalwar') add krta ha array ma last ma
+// array.pop() delete krta ha last sa
+// array.shift() start sa delete krta ha
+// array.unshift('add') start ma add krta ha 
+// array.splice(0,2)
+// array.slice()
+// array.sort() terteeb wise la ajata ha
+// array.reverse() ulta la ata ha
+// console.log(len);
+// let arr = [9, 6, 3, 7, 2];
+// // arr.sort();
+// // console.log(arr);
+// const indexNumber = arr.indexOf(6);
+
+// array.indexOf('bat')
+// const len = array.split(' ')
+// // console.log(myname.split(' '));
+
+// console.log(array.split(' '));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let fruits = ['grapes', 'apple', 'watermelon', 'mango', 'peach', 'nashpati'];
+// let eaten = fruits.slice(0, 3)
+// console.log(eaten);
+
+
+
+
+
+
+
+
+
+
+// let nameArr = prompt("Enter Your name here")
+// let myname = "umair kifayat thakur";
+// // console.log(myname.slice(0 ,5 ));
+// // console.log(myname.split(' '));
+// // console.log(nameArr);
+// // console.log(nameArr[4]);
+// let result = []
+// for (let i = 0; i < nameArr.length; i++) {
+//     //    console.log(nameArr[i].slice());
+//     let firstLetter = nameArr[i].slice(0 , 1).toUpperCase();
+//     let lastLetter = nameArr[i].slice(1).toLowerCase();
+//     let completeLetter = firstLetter + lastLetter;
+//     result.push(completeLetter);
+//     console.log(result.join(" "));
+
+// }
+// let completeLetter = result.join(' ');
+
+//     alert("processed name " + completeLetter)
+
