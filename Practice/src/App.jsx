@@ -20,6 +20,15 @@ const deletetodo = (index) =>{
   todo.splice(index,1);
   settodo([...todo])
 }
+const editedval = (index,value) =>{
+  console.log('clicked edited' , value, index);
+  todo.splice(index , 1 , value);
+  settodo([...todo])
+}
+
+
+
+
   return (
    <>
   <form onSubmit={addtodo}>
@@ -27,7 +36,7 @@ const deletetodo = (index) =>{
     <button type="submit">add</button>
   </form>
    {todo.map((item,index)=>{
-     return  <Card title = {item} key={index} deletetodo ={()=>deletetodo(index)}/>
+     return  <Card title = {item} key={index} deletetodo ={()=>deletetodo(index)} editedval ={editedval} index={index}/>
     })}
     </>
   )
