@@ -1,32 +1,13 @@
-import React, { useRef, useState } from 'react';
+import React from 'react'
 
-const Card = ({ title, deletetodo, editedval, index }) => {
-  const [edit, setEdit] = useState(true);
-  const editva = useRef();
-
-  const edited = (e) => {
-      e.preventDefault();
-    editedval(index, editva.current.value)
-    // console.log(editval.current.value);
-    setEdit(true);
-  };
-
+const Card = ({title} ) => {
   return (
-    <>
-      {edit ? (
-        <div>
-          {title} <br />
-          <button onClick={() => setEdit(false)}>Edit</button>
-          <button onClick={deletetodo}>Delete</button> <br />
-        </div>
-      ) : (
-        <form onSubmit={edited}>
-          <input type="text" ref={editva} placeholder="edit todo" />
-          <button type='submit'>Save</button>
-        </form>
-      )}
-    </>
-  );
-};
+<>
+   {title} <br />
+   <button>Edit</button>
+   <button>Delete</button> <br />
+</>
+  )
+}
 
-export default Card;
+export default Card
